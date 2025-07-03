@@ -9,8 +9,11 @@ use App\Http\Resources\PostDetailResource;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+
 class PostController extends Controller
 {
+    use AuthorizesRequests;
 
     public function index()
     {
